@@ -1,4 +1,4 @@
-# Testing Properties of Programming Languages: Section 4.2
+# Testing Properties of Languages: Section 4.2
 
 Authors: Samuel Feitosa, Rodrigo Ribeiro, Andre Du Bois
 
