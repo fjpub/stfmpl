@@ -1,4 +1,4 @@
-# A Type-Directed Algorithm to Generate Well-Typed Featherweight Java Programs
+# Testing Properties of Programming Languages: Section 4.2
 
 Authors: Samuel Feitosa, Rodrigo Ribeiro, Andre Du Bois
 
