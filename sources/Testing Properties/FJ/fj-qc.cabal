@@ -1,0 +1,65 @@
+-- This file has been generated from package.yaml by hpack version 0.20.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 1315133917e0bd8922d16d6d7b29f3aac3d6c13c20fbaa8ad28ba949a47b9723
+
+name:           fj-qc
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/fj-qc#readme>
+homepage:       https://github.com/githubuser/fj-qc#readme
+bug-reports:    https://github.com/githubuser/fj-qc/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2018 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+
+extra-source-files:
+    ChangeLog.md
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/fj-qc
+
+library
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5, containers, process
+  exposed-modules:
+      FJParser, FJInterpreter, FJUtils, FJTypeChecker
+  other-modules:
+      Paths_fj_qc
+  default-language: Haskell2010
+
+executable fj-qc-exe
+  main-is: Main.hs
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , fj-qc
+  other-modules:
+      Paths_fj_qc
+  default-language: Haskell2010
+
+test-suite fj-qc-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , fj-qc
+    , containers
+    , process
+    , QuickCheck
+  other-modules:
+      Paths_fj_qc
+  default-language: Haskell2010
