@@ -1,4 +1,4 @@
-# Thesis source-code repository
+# Thesis' source-code repository
 Author: Samuel da Silva Feitosa
 
 This repository holds the source-code for each chapter of the thesis, as follows.
